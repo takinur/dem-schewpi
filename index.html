@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dreams Event Management Ltd</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+      integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+
+  <body class="bg-white">
+    <!-- home section -->
+    <section class="py-8 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <nav
+          class="flex-wrap lg:flex items-center justify-between mb-20 lg:mb-40"
+          x-data="{navbarOpen:false}"
+        >
+          <div class="flex items-center justify-between mb-10 lg:mb-0">
+            <img src="assets/image/navbar-logo.svg" alt="Logo" />
+
+            <button
+              class="flex items-center justify-center border border-green-500 w-10 h-10 text-green-500 rounded-md outline-none lg:hidden ml-auto"
+              @click="navbarOpen = !navbarOpen"
+            >
+              <i data-feather="menu"></i>
+            </button>
+          </div>
+
+          <ul
+            class="hidden lg:block lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20"
+            :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
+          >
+            <li
+              class="px-8 py-3 font-medium text-green-500 text-lg text-center border-2 border-green-500 rounded-md hover:bg-green-500 hover:text-white transition ease-linear duration-300"
+            >
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <header class="flex-col xl:flex-row flex justify-between">
+          <div class="mx-auto text-center xl:text-left xl:mx-0 mb-20 xl:mb-0">
+            <h1
+              class="font-bold text-gray-700 text-3xl md:text-6xl leading-tight mb-10"
+            >
+              A Event <br />
+              Management <br />
+              Agency
+            </h1>
+
+            <p class="font-normal text-gray-500 text-sm md:text-lg mb-10">
+              Experience Seamless Event Planning with <br />
+              Dreams Event Management Ltd.
+            </p>
+
+            <div class="flex items-center justify-center lg:justify-start">
+              <a
+                href="#contact"
+                class="px-8 py-3 bg-green-500 font-medium text-white text-md md:text-lg rounded-md hover:bg-green-700 transition ease-in-out duration-300 mr-14"
+                >Connect</a
+              >
+            </div>
+          </div>
+
+          <div class="mx-auto xl:mx-0">
+            <img src="assets/image/home-img.svg" alt="Image" />
+          </div>
+        </header>
+      </div>
+      <!-- container.// -->
+    </section>
+    <!-- home section //end -->
+
+    <!-- feature section -->
+    <section class="py-8 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+          <div class="text-center mb-10 xl:mb-0">
+            <div class="flex items-center justify-center">
+              <div
+                class="w-20 py-7 flex justify-center bg-purple-50 text-purple-500 rounded-md mb-5 md:mb-10"
+              >
+                <i data-feather="bar-chart-2"></i>
+              </div>
+            </div>
+
+            <h2 class="font-semibold text-gray-700 text-xl md:text-3xl mb-5">
+              Weddings
+            </h2>
+
+            <p class="font-normal text-gray-400 text-sm md:text-lg">
+              Let us bring your dream wedding or celebration to life with
+              personalized planning, elegant design, and flawless execution.
+            </p>
+          </div>
+
+          <div class="text-center mb-10 md:mb-0">
+            <div class="flex items-center justify-center">
+              <div
+                class="w-20 py-7 flex justify-center bg-red-50 text-red-500 rounded-md mb-5 md:mb-10"
+              >
+                <i data-feather="dollar-sign"></i>
+              </div>
+            </div>
+
+            <h2 class="font-semibold text-gray-700 text-xl md:text-3xl mb-5">
+              Private Celebration
+            </h2>
+
+            <p class="font-normal text-gray-400 text-sm md:text-lg">
+              We create moments you and your guests will cherish forever.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="flex items-center justify-center">
+              <div
+                class="w-20 py-7 flex justify-center bg-blue-50 text-blue-500 rounded-md mb-5 md:mb-10"
+              >
+                <i data-feather="search"></i>
+              </div>
+            </div>
+
+            <h2 class="font-semibold text-gray-700 text-xl md:text-3xl mb-5">
+              Corporate Events
+            </h2>
+
+            <p class="font-normal text-gray-400 text-sm md:text-lg">
+              We specialize in organizing professional, seamless corporate
+              events—from conferences and product launches to team-building
+              retreats.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- container.// -->
+    </section>
+    <!-- feature section //end -->
+
+    <section class="py-8 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <h1
+          class="font-semibold text-gray-700 text-3xl md:text-4xl text-center mb-5"
+        >
+          What we do?
+        </h1>
+
+        <p
+          class="font-normal text-gray-500 text-md md:text-lg text-center mb-20 md:mb-40"
+        >
+          From large-scale festivals to unique themed parties, our creative team
+          <br />
+          delivers immersive experiences with dynamic designs, entertainment,
+          <br />
+          and meticulous coordination that leaves a lasting impression.
+        </p>
+
+        <div
+          class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40"
+        >
+          <div class="mx-auto xl:mx-0 mb-20 xl:mb-0">
+            <img src="assets/image/image-1.svg" alt="Image" />
+          </div>
+
+          <div class="mx-auto xl:mx-0 text-center xl:text-left">
+            <h1 class="font-bold text-gray-700 text-3xl md:text-4xl mb-10">
+              Client Satisfaction is <br />
+              Our Priority
+            </h1>
+
+            <p class="font-normal text-gray-400 text-sm md:text-lg mb-5">
+              From the initial concept to the final execution, <br />
+              we prioritize your needs to ensure a seamless<br />
+              and unforgettable event experience.
+            </p>
+
+            <a
+              href="#"
+              class="flex items-center justify-center xl:justify-start font-semibold text-green-500 text-lg gap-3 hover:text-green-700 transition ease-in-out duration-300"
+            >
+              See more
+              <i data-feather="chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40"
+        >
+          <div class="mx-auto xl:mx-0 text-center xl:text-left mb-20 xl:mb-0">
+            <h1 class="font-bold text-gray-700 text-3xl md:text-4xl mb-10">
+              Leave the Details to <br />
+              Our Experienced Team
+            </h1>
+
+            <p class="font-normal text-gray-400 text-sm md:text-lg mb-5">
+              With years of experience in event management, <br />
+              our expert staff will handle all logistics and coordination,<br />
+              making your event stress-free and flawless.
+            </p>
+
+            <a
+              href="#"
+              class="flex items-center justify-center xl:justify-start font-semibold text-green-500 text-lg gap-3 hover:text-green-700 transition ease-in-out duration-300"
+            >
+              See more
+              <i data-feather="chevron-right"></i>
+            </a>
+          </div>
+
+          <div class="mx-auto xl:mx-0">
+            <img src="assets/image/image-2.svg" alt="Image" />
+          </div>
+        </div>
+      </div>
+      <!-- container.// -->
+    </section>
+
+    <footer class="bg-green-50 py-8 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div
+          class="lg:flex flex-col md:flex-row text-center lg:text-left lg:justify-between"
+        >
+          <div class="mb-10 lg:mb-0">
+            <img
+              src="assets/image/footer-logo.svg"
+              alt="Image"
+              class="mb-5 mx-auto lg:mx-0"
+            />
+
+            <p class="font-normal text-gray-400 text-md">
+              <b>Dreams Event Management Ltd. </b><br />
+              Your Vision, Our Expertise Heading: Creating Memorable Events,
+              Tailored Just for You
+            </p>
+          </div>
+
+          <div class="space-y-4 mb-10 lg:mb-0">
+            <h4 class="font-semibold text-gray-500 text-lg mb-6">
+              Our services
+            </h4>
+
+            <a
+              href="#"
+              class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300"
+              >Events</a
+            >
+
+            <a
+              href="#"
+              class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300"
+              >Conference</a
+            >
+
+            <a
+              href="#"
+              class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300"
+              >Weddings</a
+            >
+
+            <a
+              href="#"
+              class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300"
+              >Birthdays</a
+            >
+          </div>
+
+          <div class="space-y-4 mb-10 lg:mb-0">
+            <h4 class="font-semibold text-gray-500 text-lg mb-6" id="contact">
+              Contact
+            </h4>
+
+            <p class="block font-normal text-gray-400 text-md">
+              Contact details available upon request.
+            </p>
+          </div>
+        </div>
+
+        <hr class="text-gray-300 mt-10" />
+
+        <p class="font-normal text-gray-400 text-md text-center mt-5">
+          &copy; 2024
+        </p>
+      </div>
+      <!-- container.// -->
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
