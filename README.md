@@ -1,6 +1,6 @@
 # dem-schewpi
 
-A lightning-fast, design-forward landing page for **Dreams Event Management Ltd** — built with **Tailwind CSS** and **Alpine.js**, and deployed to the edge on **Vercel** for absurdly quick load times.
+A lightning-fast, design-forward Web application** — built with **Tailwind CSS** and **Alpine.js**, and deployed to the edge on **Vercel** for absurdly quick load times.
 
 > Think “boutique agency website”, but engineered like it’s serving a million users (because why not).
 
